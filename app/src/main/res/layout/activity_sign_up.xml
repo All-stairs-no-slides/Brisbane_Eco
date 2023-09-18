@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-150dp"
+        app:srcCompat="@drawable/img_3183" />
+
+    <EditText
+        android:id="@+id/NameEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="0dp"
+        android:hint="Username"/>
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginVertical="20dp"
+        android:hint="Password"/>
+    <EditText
+        android:id="@+id/PhoneEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:inputType="phone"
+        android:hint="Phone Number"/>
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Sign Up" />
+
+</LinearLayout>
