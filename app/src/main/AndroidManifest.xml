@@ -22,6 +22,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".RubbishMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainMenuActivity"
             android:exported="true" >
 
