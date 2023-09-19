@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com             /apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_container"
     android:layout_width="match_parent"
@@ -10,15 +10,14 @@
     android:orientation="vertical"
     tools:context=".launcher"
     android:background="@color/white">
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Brisbane ECO App"
-        android:textSize="32sp"
 
-        android:textColor="#72BA53"
-        />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="349dp"
+        android:layout_height="121dp"
+        android:layout_gravity="top|center"
+        android:src="@drawable/logo" />
+
     <LinearLayout
         android:id="@+id/button_container"
         android:layout_width="match_parent"
@@ -26,26 +25,30 @@
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textStyle="bold"
-            android:textColor="#365687"
             android:layout_marginRight="8dp"
+            android:backgroundTint="#8aaade"
             android:paddingHorizontal="48dp"
-            android:backgroundTint="@color/black"/>
+            android:text="Login"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btnSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Signup"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#045F88"
             android:layout_marginStart="8dp"
+            android:backgroundTint="#72B953"
             android:paddingHorizontal="48dp"
-            android:backgroundTint="#72B953"/>
+            android:text="Signup"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

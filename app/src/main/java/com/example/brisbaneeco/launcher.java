@@ -32,7 +32,6 @@ public class launcher extends AppCompatActivity {
     }
     private void setViewIds()
     {
-        TitleTextView = findViewById(R.id.title);
         SignUp = findViewById(R.id.btnSignup);
         LogIn = findViewById(R.id.btnLogin);
     }
