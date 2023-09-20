@@ -24,10 +24,10 @@ public class RubbishMenuActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-//        PickUp.setOnClickListener(view -> {
-//            Intent intent = new Intent(RubbishMenuActivity.this, .class);
-//            startActivity(intent);
-//        });
+        PickUp.setOnClickListener(view -> {
+            Intent intent = new Intent(RubbishMenuActivity.this, PickupDateActivity.class);
+            startActivity(intent);
+        });
 //
 //        RubbishLog.setOnClickListener(view -> {
 //            Intent intent = new Intent(RubbishMenuActivity.this, .class);
