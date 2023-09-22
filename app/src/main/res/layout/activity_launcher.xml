@@ -28,14 +28,13 @@
 
         <Button
             android:id="@+id/btnLogin"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             android:backgroundTint="#8aaade"
             android:paddingHorizontal="48dp"
             android:text="Login"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textColor="#ffffff"
             android:textStyle="bold" />
 
