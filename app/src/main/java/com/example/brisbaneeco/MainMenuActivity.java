@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainMenuActivity extends AppCompatActivity {
 
     private Button Rubbish;
+//    private Button option2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,15 @@ public class MainMenuActivity extends AppCompatActivity {
             Intent intent = new Intent(MainMenuActivity.this, RubbishMenuActivity.class);
             startActivity(intent);
         });
+//        option2.setOnClickListener(view -> {
+//            Intent intent = new Intent(MainMenuActivity.this, menupage.class);
+//            startActivity(intent);
+//        });
     }
 
     private void SetViewIds()
     {
         Rubbish = findViewById(R.id.RubbishBtn);
+//        option2 = findViewById(R.id.btnOption2);
     }
 }

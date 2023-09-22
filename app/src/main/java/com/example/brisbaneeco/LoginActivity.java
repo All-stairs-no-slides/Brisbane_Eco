@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
         setviewIds();
 
         LoggedIn.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
+            Intent intent = new Intent(LoginActivity.this, menupage.class);
             startActivity(intent);
         });
     }

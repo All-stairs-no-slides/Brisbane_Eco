@@ -18,7 +18,7 @@ public class SignUpActivity extends AppCompatActivity {
         setviewIds();
 
         SignedUp.setOnClickListener(view -> {
-            Intent intent = new Intent(SignUpActivity.this, MainMenuActivity.class);
+            Intent intent = new Intent(SignUpActivity.this, menupage.class);
             startActivity(intent);
         });
     }
