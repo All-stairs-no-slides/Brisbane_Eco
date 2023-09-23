@@ -28,6 +28,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:clickable="true"
+                android:id="@id/ProfileMenuBtn"
                 android:layout_width="79dp"
                 android:layout_height="79dp"
                 android:layout_gravity="center"

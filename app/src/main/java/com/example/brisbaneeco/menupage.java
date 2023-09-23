@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class menupage extends AppCompatActivity {
 
     private TextView RubbishMenu;
+    private ImageView ProfileMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +25,17 @@ public class menupage extends AppCompatActivity {
             Intent intent = new Intent(menupage.this, RubbishMenuActivity.class);
             startActivity(intent);
         });
+
+        ProfileMenu.setOnClickListener(view -> {
+            Intent intent = new Intent(menupage.this, ProfileActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void setViewIds(){
+
         RubbishMenu = findViewById(R.id.RubbishMenuBtn);
+        ProfileMenu = findViewById(R.id.ProfileMenuBtn);
     }
 
 }
