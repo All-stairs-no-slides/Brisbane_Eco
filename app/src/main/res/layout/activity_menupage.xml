@@ -115,6 +115,8 @@
             android:layout_gravity="left|top"
             android:src="@drawable/baseline_help_outline_24" />
     <TextView
+        android:clickable="true"
+        android:id="@id/CameraBtn"
         android:layout_width="316dp"
         android:layout_height="39dp"
         android:text="Bin information"

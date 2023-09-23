@@ -2,4 +2,5 @@
 <resources>
     <item name="RubbishMenuBtn" type="id" />
     <item name="ProfileMenuBtn" type="id" />
+    <item name="CameraBtn" type="id" />
 </resources>

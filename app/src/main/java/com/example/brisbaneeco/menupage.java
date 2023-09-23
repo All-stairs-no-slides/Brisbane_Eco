@@ -13,6 +13,7 @@ public class menupage extends AppCompatActivity {
 
     private TextView RubbishMenu;
     private ImageView ProfileMenu;
+    private TextView CameraScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +31,18 @@ public class menupage extends AppCompatActivity {
             Intent intent = new Intent(menupage.this, ProfileActivity.class);
             startActivity(intent);
         });
+
+        CameraScreen.setOnClickListener(view -> {
+            Intent intent = new Intent(menupage.this, CameraActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void setViewIds(){
 
         RubbishMenu = findViewById(R.id.RubbishMenuBtn);
         ProfileMenu = findViewById(R.id.ProfileMenuBtn);
+        CameraScreen = findViewById(R.id.CameraBtn);
     }
 
 }
