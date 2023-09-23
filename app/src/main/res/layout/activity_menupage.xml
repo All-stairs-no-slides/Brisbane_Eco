@@ -28,6 +28,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:clickable="true"
+                android:id="@id/ProfileMenuBtn"
                 android:layout_width="79dp"
                 android:layout_height="79dp"
                 android:layout_gravity="center"
@@ -113,6 +115,8 @@
             android:layout_gravity="left|top"
             android:src="@drawable/baseline_help_outline_24" />
     <TextView
+        android:clickable="true"
+        android:id="@id/CameraBtn"
         android:layout_width="316dp"
         android:layout_height="39dp"
         android:text="Bin information"
