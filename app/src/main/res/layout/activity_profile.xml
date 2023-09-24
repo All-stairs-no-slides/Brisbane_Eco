@@ -157,6 +157,8 @@
       android:orientation="vertical"
       android:layout_height="wrap_content">
     <TextView
+        android:clickable="true"
+        android:id="@+id/BadgeShortcutBtn"
         android:layout_width="316dp"
         android:layout_height="39dp"
         android:layout_gravity="left"

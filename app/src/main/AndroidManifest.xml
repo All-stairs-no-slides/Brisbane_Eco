@@ -40,7 +40,7 @@
             android:name=".MapActivity"
             android:exported="false" />
         <activity
-            android:name=".MainMenuActivity"
+            android:name=".MedalsPage"
             android:exported="true" />
         <activity
             android:name=".SignUpActivity"

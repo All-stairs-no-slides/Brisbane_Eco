@@ -195,6 +195,8 @@
             android:layout_gravity="start|top"
             android:src="@drawable/baseline_stars_24" />
         <TextView
+            android:clickable="true"
+            android:id="@id/BadgeBtn"
             android:layout_width="316dp"
             android:layout_height="39dp"
             android:text="View Badges"
