@@ -10,7 +10,7 @@ public class RubbishMenuActivity extends AppCompatActivity {
 
     private Button BinLocations;
     private Button PickUp;
-    private Button RubbishLog;
+    private Button RubbishInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +28,17 @@ public class RubbishMenuActivity extends AppCompatActivity {
             Intent intent = new Intent(RubbishMenuActivity.this, PickupDateActivity.class);
             startActivity(intent);
         });
-//
-//        RubbishLog.setOnClickListener(view -> {
-//            Intent intent = new Intent(RubbishMenuActivity.this, .class);
-//            startActivity(intent);
-//        });
+
+        RubbishInfo.setOnClickListener(view -> {
+            Intent intent = new Intent(RubbishMenuActivity.this, RubbishInfoActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void setViewIds()
     {
         BinLocations = findViewById(R.id.BinLocationsBtn);
         PickUp = findViewById(R.id.PickUpBtn);
-        RubbishLog = findViewById(R.id.RubbishLogBtn);
+        RubbishInfo = findViewById(R.id.RubbishLogBtn);
     }
 }

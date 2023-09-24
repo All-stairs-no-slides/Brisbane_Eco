@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Kurbside Collection"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowRadius = "2"
+            android:textColorHint="@color/teal_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Lorem ipsum dolor sit amet, . Integer vestibulum aliquet lectus, ac ornare dui placerat vel. Quisque quis mauris in tellus finibus volutpat at quis velit. Proin tempus sapien nisi, id sagittis nisi dignissim ut. Vestibulum vitae tellus dui. Praesent vulputate orci ligula, ut finibus felis dignissim pretium. Proin quis massa vitae metus dictum euismod sit amet ac sapien. Aenean mauris eros, cursus et porttitor et, pr"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowRadius = "2"
+            android:textColorHint="#8E8E8E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Green Waste Day"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/teal_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Lorem ipsum dolor sit amet, . Integer vestibulum aliquet lectus, ac ornare dui placerat vel. Quisque quis mauris in tellus finibus volutpat at quis velit. Proin tempus sapien nisi, id sagittis nisi dignissim ut. Vestibulum vitae tellus dui. Praesent vulputate orci ligula, ut finibus felis dignissim pretium. Proin quis massa vitae metus dictum euismod sit amet ac sapien. Aenean mauris eros, cursus et porttitor et, pr"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowRadius = "2"
+            android:textColorHint="#8E8E8E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="New Recycling Information!"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/teal_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Lorem ipsum dolor sit amet, . Integer vestibulum aliquet lectus, ac ornare dui placerat vel. Quisque quis mauris in tellus finibus volutpat at quis velit. Proin tempus sapien nisi, id sagittis nisi dignissim ut. Vestibulum vitae tellus dui. Praesent vulputate orci ligula, ut finibus felis dignissim pretium. Proin quis massa vitae metus dictum euismod sit amet ac sapien. Aenean mauris eros, cursus et porttitor et, pr"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowRadius = "2"
+            android:textColorHint="#8E8E8E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="City Dump Special Offer"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/teal_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Lorem ipsum dolor sit amet, . Integer vestibulum aliquet lectus, ac ornare dui placerat vel. Quisque quis mauris in tellus finibus volutpat at quis velit. Proin tempus sapien nisi, id sagittis nisi dignissim ut. Vestibulum vitae tellus dui. Praesent vulputate orci ligula, ut finibus felis dignissim pretium. Proin quis massa vitae metus dictum euismod sit amet ac sapien. Aenean mauris eros, cursus et porttitor et, pr"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowRadius = "2"
+            android:textColorHint="#8E8E8E" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/teal_200"
+            android:hint="Green Waste and You"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Lorem ipsum dolor sit amet, . Integer vestibulum aliquet lectus, ac ornare dui placerat vel. Quisque quis mauris in tellus finibus volutpat at quis velit. Proin tempus sapien nisi, id sagittis nisi dignissim ut. Vestibulum vitae tellus dui. Praesent vulputate orci ligula, ut finibus felis dignissim pretium. Proin quis massa vitae metus dictum euismod sit amet ac sapien. Aenean mauris eros, cursus et porttitor et, pr"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowRadius = "2"
+            android:textColorHint="#8E8E8E" />
+    </LinearLayout>
+</ScrollView>
+
