@@ -13,10 +13,10 @@ public class DataRequestReciever {
             System.out.println("Received request: " + data);
             // You can process the data further or save it to a database
             // processing and sending response back
-            if (data.contains("Temperature")){
-                return "Requires Accelerometer Data";
+            if (data.contains("Give_Location")){
+                return "The nearby bins are at ";
             }else {
-                return "Data received successfully!";
+                return "We do not take this kind of request";
             }
         });
     }
