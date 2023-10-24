@@ -20,7 +20,7 @@ public class RubbishMenuActivity extends AppCompatActivity {
         setViewIds();
 
         BinLocations.setOnClickListener(view -> {
-            Intent intent = new Intent(RubbishMenuActivity.this, MapActivity.class);
+            Intent intent = new Intent(RubbishMenuActivity.this, MapsActivity.class);
             startActivity(intent);
         });
 
