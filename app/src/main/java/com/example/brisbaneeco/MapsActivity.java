@@ -1,6 +1,8 @@
 package com.example.brisbaneeco;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -11,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
+    double[] RubbishXY = {-27.4773131, 153.022925};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        updateLongTextView(RubbishXY[0]);
+        updateLatTextView(RubbishXY[1]);
     }
 
     /**
@@ -35,13 +39,24 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-27.4762542, 153.0471621);
-        mMap.addMarker(new MarkerOptions()
-                .position(sydney)
-                .title("The Silly Residence"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng bin = new LatLng(RubbishXY[0], RubbishXY[1]);
+        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        googleMap.addMarker(new MarkerOptions()
+                .position(bin)
+                .title("Rubbish Bin"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(bin));
+        googleMap.moveCamera(CameraUpdateFactory.zoomTo(15));
+        googleMap.setTrafficEnabled(true);
     }
+
+    public void updateLongTextView(double toThis){
+        TextView textView = (TextView) findViewById(R.id.LongitudeText);
+        textView.setText("X: " + toThis);
+    }
+    public void updateLatTextView(double toThis){
+        TextView textView = (TextView) findViewById(R.id.LatitudeText);
+        textView.setText("Y: " + toThis);
+    }
+
 }
