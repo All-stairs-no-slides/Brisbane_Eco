@@ -31,6 +31,7 @@
             android:name=".BleServerActivity"
             android:exported="true" >
 
+<<<<<<< Updated upstream
 <!--            <intent-filter>-->
 <!--                 <action android:name="android.intent.action.MAIN" />-->
 <!--                 <category android:name="android.intent.category.LAUNCHER" />-->
@@ -39,6 +40,15 @@
 
 
         <!--     TODO: Before you run your application, you need a Google Maps API key.
+=======
+<!--             <intent-filter>-->
+<!--                 <action android:name="android.intent.action.MAIN" />-->
+<!--                 <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
+         </activity>
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+>>>>>>> Stashed changes
 
              To get one, follow the directions here:
 
@@ -96,7 +106,11 @@
                  <action android:name="android.intent.action.MAIN" />
                  <category android:name="android.intent.category.LAUNCHER" />
              </intent-filter>
+<<<<<<< Updated upstream
          </activity>
+=======
+        </activity>
+>>>>>>> Stashed changes
         <activity
             android:name=".MedalsPage"
             android:exported="true" />

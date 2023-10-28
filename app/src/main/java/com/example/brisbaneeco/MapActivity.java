@@ -23,6 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
@@ -85,9 +86,14 @@ public class MapActivity extends AppCompatActivity {
                 super.onScanResult(callbackType, result);
 
                 Log.d(TAG, String.valueOf(result.toString()));
+
                 if (result.getScanRecord().getServiceUuids() != null) {
 //                    tvDeviceData.setText(DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
+<<<<<<< Updated upstream
                     Log.d(TAG, "results: " + DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
+=======
+                    Log.d(TAG, DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
+>>>>>>> Stashed changes
                 }
 
             }
