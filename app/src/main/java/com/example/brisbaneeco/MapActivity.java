@@ -89,11 +89,11 @@ public class MapActivity extends AppCompatActivity {
 
                 if (result.getScanRecord().getServiceUuids() != null) {
 //                    tvDeviceData.setText(DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
-<<<<<<< Updated upstream
+
                     Log.d(TAG, "results: " + DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
-=======
+
                     Log.d(TAG, DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
->>>>>>> Stashed changes
+
                 }
 
             }
