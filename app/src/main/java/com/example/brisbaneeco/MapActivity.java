@@ -40,7 +40,7 @@ public class MapActivity extends AppCompatActivity {
     private BluetoothManager bluetoothManager;
     private BluetoothAdapter bluetoothAdapter;
     private BluetoothLeScanner bluetoothLeScanner;
-    TextView tvDeviceData;
+//    TextView tvDeviceData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +86,8 @@ public class MapActivity extends AppCompatActivity {
 
                 Log.d(TAG, String.valueOf(result.toString()));
                 if (result.getScanRecord().getServiceUuids() != null) {
-                    tvDeviceData.setText(DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
+//                    tvDeviceData.setText(DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
+                    Log.d(TAG, "results: " + DataEnCryptDecrypt.decryptFromUUID(result.getScanRecord().getServiceUuids().get(0).getUuid()));
                 }
 
             }
