@@ -34,7 +34,7 @@ public class menupage extends AppCompatActivity {
         });
 
         CameraScreen.setOnClickListener(view -> {
-            Intent intent = new Intent(menupage.this, CameraActivity.class);
+            Intent intent = new Intent(menupage.this, QRCodeScanner.class);
             startActivity(intent);
         });
 
