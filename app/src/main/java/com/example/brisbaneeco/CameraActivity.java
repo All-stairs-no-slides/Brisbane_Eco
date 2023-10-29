@@ -25,6 +25,6 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(CameraActivity.this, ScannerActivity.class));
+        startActivity(new Intent(CameraActivity.this, AddPoints.class));
     }
 }
